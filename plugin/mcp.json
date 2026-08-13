@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "graph-retention": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["${GRAPH_RETENTION_ROOT}/scripts/run-mcp.mjs"],
+      "env": {
+        "GRAPH_RETENTION_CWD": "${workspaceFolder}"
+      }
+    }
+  }
+}

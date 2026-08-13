@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "hooks": {
+    "sessionStart": [
+      {
+        "command": "node ${env:GRAPH_RETENTION_ROOT}/scripts/run-cli.mjs session-start"
+      }
+    ],
+    "sessionEnd": [
+      {
+        "command": "node ${env:GRAPH_RETENTION_ROOT}/scripts/run-cli.mjs session-end"
+      }
+    ],
+    "afterFileEdit": [
+      {
+        "command": "node ${env:GRAPH_RETENTION_ROOT}/scripts/run-cli.mjs observe-file-edit"
+      }
+    ],
+    "preCompact": [
+      {
+        "command": "node ${env:GRAPH_RETENTION_ROOT}/scripts/run-cli.mjs pre-compact"
+      }
+    ],
+    "stop": [
+      {
+        "command": "node ${env:GRAPH_RETENTION_ROOT}/scripts/run-cli.mjs session-end"
+      }
+    ]
+  }
+}

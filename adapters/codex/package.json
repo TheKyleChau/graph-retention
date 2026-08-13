@@ -1,0 +1,6 @@
+{
+  "name": "@graph-retention/adapter-codex",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Codex CLI config templates for graph retention"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "@graph-retention/cli",
+  "version": "0.1.0",
+  "description": "CLI for graph retention lifecycle hooks",
+  "type": "module",
+  "bin": {
+    "graph-retention": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "files": ["dist"],
+  "dependencies": {
+    "@graph-retention/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "typescript": "^5.7.3"
+  }
+}

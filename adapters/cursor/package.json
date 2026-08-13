@@ -1,0 +1,6 @@
+{
+  "name": "@graph-retention/adapter-cursor",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Cursor hooks and config templates for graph retention"
+}

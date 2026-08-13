@@ -1,0 +1,6 @@
+{
+  "name": "graph-retention",
+  "version": "0.1.0",
+  "description": "Local-first graph memory with retention policies",
+  "mcp": "./mcp.json"
+}

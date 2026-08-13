@@ -1,0 +1,37 @@
+{
+  "name": "graph-retention",
+  "displayName": "Graph Retention",
+  "description": "Local-first graph memory with retention policies for AI agents",
+  "version": "0.1.0",
+  "publisher": "graph-retention",
+  "license": "GPL-3.0-only",
+  "type": "commonjs",
+  "engines": {
+    "vscode": "^1.102.0"
+  },
+  "categories": ["Other", "Machine Learning"],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "mcpServerDefinitionProviders": [
+      {
+        "id": "graph-retention.mcp",
+        "label": "Graph Retention"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "clean": "rm -rf dist",
+    "package": "vsce package --no-dependencies"
+  },
+  "dependencies": {
+    "@graph-retention/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "@types/vscode": "^1.102.0",
+    "typescript": "^5.7.3"
+  }
+}

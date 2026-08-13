@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "SessionStart": {
+      "command": "node hooks/run.mjs SessionStart"
+    },
+    "SessionEnd": {
+      "command": "node hooks/run.mjs SessionEnd"
+    },
+    "PreCompact": {
+      "command": "node hooks/run.mjs PreCompact"
+    },
+    "Stop": {
+      "command": "node hooks/run.mjs Stop"
+    }
+  }
+}

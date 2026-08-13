@@ -1,0 +1,35 @@
+node_modules/
+dist/
+*.tsbuildinfo
+
+# SQLite / local graph
+*.db
+*.db-shm
+*.db-wal
+.graph-retention/
+
+# Build artifacts
+*.vsix
+*.log
+coverage/
+.vscode-test/
+.turbo/
+
+# Env and OS
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+
+# Editor
+.idea/
+*.swp
+*.swo
+
+# Generated dumps (not part of the release)
+*.results.json
+*.pdf
+
+# Pack
+*.tgz

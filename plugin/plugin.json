@@ -1,0 +1,7 @@
+{
+  "name": "graph-retention",
+  "version": "0.1.0",
+  "description": "Local-first graph memory with retention policies for AI agents",
+  "mcp": "./mcp.json",
+  "skills": ["./skills/graph-retention"]
+}
